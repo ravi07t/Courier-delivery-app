@@ -1,0 +1,467 @@
+@media only screen and (min-width: 100px) and (max-width: 500px) {
+    .overallContainer {
+      width: 100%;
+      min-height: 500%;
+    
+    }
+    .navbarContainer {
+      width: 100%;
+        padding: 0;
+        position: relative;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 1030;
+        
+    }
+    .shadowTrasfroms {
+      background-color: rgba(250, 247, 247, 0.5);
+
+    }
+    .subNavbar {
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        width: 100%;
+        height: 100vh;
+        align-items: flex-start;
+        justify-content: flex-start;
+        row-gap: 15px;
+        padding: 50px 20px;
+        left: -100%; 
+        transition: left 1s ease; 
+        background-color: rgb(250, 247, 247);
+      }
+   
+    hr {
+      display: block;
+        width: 87%;
+        position: fixed;
+        top: 120%;
+    }
+
+    .searchContainer {
+      display: none;
+    }
+    form {
+      display: block;
+      width: 100%;
+      height: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 5px;
+    }
+    .search-input {
+      width: 100%;
+      height: 40px;
+      padding-left: 10px;
+      font-size: 1rem;
+      font-weight: 400;
+      line-height: 1.5;
+      color: #2F2E41;
+      background-color: transparent;
+      background-clip: padding-box;
+      border: none;
+      border: 1px solid gray;
+      border-radius: 3px;
+    }
+    .btnSearch {
+      width: 50px;
+      height: 40px;
+      display: inline-block;
+      font-size: 1rem;
+      font-weight: 400;
+      line-height: 1.5;
+      color: #ff1717;
+      background-color: transparent;
+      border: 1px solid #FF9A5A;
+      border-radius: 50%;
+        
+    }
+    .iconDiv {
+      position: fixed;
+      right: 7%;
+      width: 50px;
+      height: 35px;
+      display: flex;
+      color: #2F2E41;
+      justify-content: center;
+      align-items: center;
+      font-size: 30px;
+      border: 1px solid #e4e4ee;
+      border-radius: 3px;
+    }
+   
+  input:checked ~ .subNavbar {
+      left: 0; 
+  }
+  .iconChech {
+    opacity: 1;
+  }
+ 
+    .subNavbar a:before {
+    width: 100%;
+  }
+ 
+ /* home page mobile media query */
+  .homePageContainer {
+    width: 100%;
+    min-height: 550%;
+    flex-direction: column-reverse;
+    padding-top: 130px;
+  }
+
+ 
+  .rightContentContainer {
+    width: 100%;
+    min-height: 200px;
+    padding: 0 10px;
+  }
+  .imageStyles {
+    width: 100%;
+    height: 180px;
+  }
+  .leftContentContainer {
+    width: 100%;
+    padding: 0px;
+    
+  }
+  .contentContainer {
+    width: 100%;
+    min-height: 450px;
+    text-align: center;
+  }
+  .paragraphHomePage {
+    padding: 0 7px;
+  }
+  
+ /* service page mobile media query */
+ 
+ .serviceH1 {
+  font-size: 30px;
+ }
+ 
+ .cardOverallDiv {
+  width: 100%;
+  min-height: 500%;
+  padding: 0 20px;
+  flex-direction: column;
+  gap: 20px;
+}
+.cardContainer {
+  width: 100%;
+  min-height: 100%;
+  padding: 40px 28px;
+}
+/* small cards */
+.findusOverallContainer {
+  padding-top: 100px;
+}
+.smallCardsOverallContainer {
+  flex-direction: column;
+  width: 100%;
+  min-height: 1000px;
+  row-gap: 50px;
+}
+.smallImageCard {
+  width: 80%;
+  height: 190px;
+  text-align: center;
+  background-color: rgba(228, 228, 238, 0.5);
+  box-shadow: 0 0 2px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/* video content */
+.videoOverallContainer  {
+  display: block;
+  width: 100%;
+  min-height: fit-content;
+}
+
+.imageContainerforVideo  {
+  width: 90%;
+  min-height: 250px;
+  background-color: transparent;
+  position: relative;
+  cursor: pointer;
+  left: 10px;
+}
+.secImageStyles {
+  width: 300px;
+  height: 250px;
+  object-fit: cover;
+  outline: 125px solid rgba(12, 11, 11, 0.8) !important;
+  outline-offset: -125px;
+  border-radius: 10px;
+}
+
+.imageContentforVideo {
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  position: absolute;
+  top: -45px;
+  left: 10px;
+}
+.imageH2 {
+  padding-top: 10px;
+}
+
+/* testtimonial */
+.testCardOverallContainer {
+    min-height: 650px;
+}
+.testimonialContainer {
+  background-position: 90px 20px;
+}
+/* slider card section */
+.slideCardOverallContainer::after {
+  content: none;
+}
+.slideCardOverallContainer::before {
+  content: none;
+}
+
+.insideSlideContainer {
+  animation: slideAnimation 10s linear ease-in-out;
+  
+}
+.insideCards {
+  width: 310px;
+  height: 320px;
+  transition: transform 5s ease-in-out;
+}
+
+@keyframes slideAnimation {
+  0% {
+    transform: translateX(calc(-480px * 1));
+  }
+  10% {
+    transform: translateX(calc(-480px * 1));
+  }
+  20% {
+    transform: translateX(calc(-480px * 1));
+  }
+  30% {
+    transform: translateX(calc(-480px * 2)); /* Adjust based on card width */
+  }
+  40% {
+    transform: translateX(calc(-480px * 3));
+  }
+  50% {
+    transform: translateX(calc(-480px * 4)); /* Adjust based on card width */
+  }
+  60% {
+    transform: translateX(calc(-480px * 5));
+  }
+  70% {
+    transform: translateX(calc(-480px * 6));
+  }
+  80% {
+    transform: translateX(calc(-480px * 7));
+  }
+  90% {
+    transform: translateX(calc(-480px * 8));
+  }
+  100% {
+    transform: translateX(calc(-480px * 9)); /* Adjust based on card width */
+  }
+  110% {
+    transform: translateX(calc(-480px * 10));
+  }
+  
+}
+#slider {
+  height: 140vw;
+}
+.formOverallContainer {
+  min-height: 500px;
+}
+.branchesParaCon {
+  padding: 0;
+  min-height: 360px;
+}
+.rotatioOverallContainer {
+  min-height: 600px;
+  justify-content: center;
+  padding: 15px;
+}
+.rotationContentContainer {
+  min-height: 500px;
+  padding: 0;
+}
+.rotation-container {
+  display: none;
+}
+
+figure.snip1477 {
+  height: 285px;
+}
+#slider label {
+  height: 70%;
+  width: 70%;
+}
+figure.snip1477 figcaption {
+  padding: 5px 30px 5px 10px;
+}
+
+
+/* form contact us */
+.contactUsFormOverallConatinner {
+  flex-direction: column;
+  padding: 0;
+  min-height: 700px;
+}
+.contactShortly {
+  text-align: center;
+}
+.contactusImageContainer {
+  min-height: 500px;
+  width: 100%;
+}
+.contactImagestyle {
+  width: 100%;
+}
+.container {
+  width: 100%;
+  min-height: 580px;
+  padding: 10px 10px
+}
+.contactusformContainer {
+  width: 100%;
+  min-height: 750px;
+}
+form .form-row .input-data  {
+  margin: 33px 0 !important;
+}
+.container form .form-row {
+  display: inline;
+}
+
+/* footer */
+.rowForFooter {
+  flex-direction: column;
+  height: 200px;
+  min-height: 1000px;
+}
+.new_footer_top {
+  padding: 0;
+  min-height: 1000px;
+}
+.colHeight {
+  height: 230px;
+}
+.containerForFooter {
+  min-height: 100px;
+}
+.new_footer_top .footer_bg {
+  top: 90%;
+}
+
+
+
+
+
+}
+  
+@media only screen and (min-width: 321px) and (max-width: 375px) {
+    /* video content */
+.videoOverallContainer  {
+    display: block;
+    width: 100%;
+    min-height: fit-content;
+    padding-left: 10px;
+  }
+  
+  .imageContainerforVideo  {
+    width: 90%;
+    min-height: 250px;
+    background-color: transparent;
+    position: relative;
+    cursor: pointer;
+    left: 10px;
+  }
+  .secImageStyles {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    outline: 125px solid rgba(12, 11, 11, 0.8) !important;
+    outline-offset: -125px;
+    border-radius: 10px;
+  }
+  
+  .imageContentforVideo {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    position: absolute;
+    top: -45px;
+    left: 0px;
+  }
+  .imageH2 {
+    padding-top: 10px;
+  }
+  .form .form-row .input-data  {
+    margin: 40px 0 !important;
+  }
+.container {
+    min-height: 580px;
+}
+.containerForFooter {
+  min-height: 100px;
+}
+}
+@media only screen and (min-width: 376px) and (max-width: 425px) {
+    .videoOverallContainer  {
+        display: block;
+        width: 100%;
+        min-height: fit-content;
+        padding-left: 10px;
+      }
+      
+      .imageContainerforVideo  {
+        width: 90%;
+        min-height: 250px;
+        background-color: transparent;
+        position: relative;
+        cursor: pointer;
+        left: 10px;
+      }
+      .secImageStyles {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+        outline: 125px solid rgba(12, 11, 11, 0.8) !important;
+        outline-offset: -125px;
+        border-radius: 10px;
+      }
+      
+      .imageContentforVideo {
+        width: 100%;
+        padding: 10px;
+        text-align: center;
+        position: absolute;
+        top: -45px;
+        left: 0px;
+      }
+      .imageH2 {
+        padding-top: 10px;
+      }
+      figure.snip1477 {
+        height: 360px;
+    }
+    .container {
+      min-height: 580px;
+    }
+    .containerForFooter {
+      min-height: 100px;
+  }
+}
+  

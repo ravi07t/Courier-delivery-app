@@ -1,0 +1,48 @@
+@media only screen and (min-width: 800px) and (max-width: 1200px) {
+    .leftContentContainer {
+        padding: 0;
+    }
+    .rightContentContainer {
+        padding: 0;
+        justify-content: flex-start;
+    }
+    .navbarContainer {
+        width: 96%;
+       left: 2%;
+       right: 0;
+       padding: 10px 0px;
+    }
+    .subNavbar {
+        width: 70%;
+    }
+    .cardContainer {
+        width: 28%;
+        padding: 40px 25px;
+    }
+    .insideCards {
+        min-height: 365px;
+    }
+    #slider label {
+        width: 70%;
+        height: 130%;
+    }
+    .branchesParaCon {
+        padding: 0px 100px;
+    }
+    .rotationContentContainer {
+        width: 500px;
+    }
+    .container {
+        width: 100%;
+    }
+    .containerForFooter {
+        min-height: 50px;
+    }
+
+
+
+
+
+    
+
+}
